@@ -27,9 +27,7 @@ var studenti = [
     }
 ];
 for (var i = 0; i < studenti.length; i++) {
-    for (arrKey in studenti[i]) {
-        document.getElementById("myP2").innerHTML += arrKey + ": " + studenti[i][arrKey] + "<br>";
-    }
+    document.getElementById("myP2").innerHTML += "Studente " + (i + 1) + ":<br>" + studenti[i].nome + " " + studenti[i].cognome + "<br>";
 };
 
 // terza parte
@@ -38,8 +36,8 @@ var tempStudente = {
     cognome: "",
     eta: 0
 };
-for (addKey in tempStudente) {
-    tempStudente[addKey] = prompt("Inserire " + addKey + " del nuovo studente:");
+for (key in tempStudente) {
+    tempStudente[key] = prompt("Inserire " + key + " del nuovo studente:");
 };
 studenti.push(tempStudente);
 for (var i = 0; i < studenti.length; i++) {

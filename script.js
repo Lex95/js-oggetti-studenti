@@ -36,6 +36,7 @@ var tempStudente = {
     cognome: "",
     eta: 0
 };
+// potevo aggiungere dei controlli
 for (key in tempStudente) {
     tempStudente[key] = prompt("Inserire " + key + " del nuovo studente:");
 };
